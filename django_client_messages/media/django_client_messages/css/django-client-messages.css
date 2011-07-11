@@ -1,0 +1,32 @@
+/* Completely optional CSS for more-distinguished message classes.
+ * The js will work fine w/o these styles, but they do makes things
+ * a bit cleaner.
+ *
+ * For the icons, we currently assume that the admin contrib app is installed
+ * and ADMIN_MEDIA_PREFIX is '/media/', which is bad mojo.
+ *
+ * TODO: package icons with the app?
+ * TODO: icons for all classes?
+ */
+ul.messagelist li.older {
+  color: #999;
+}
+ul.messagelist li {
+  background-color: #ddd;
+  background-image: none;
+}
+ul.messagelist li.error {
+  background-color: #FFEDEF;
+  background-image: url(/media/img/admin/icon_error.gif);
+}
+ul.messagelist li.warning {
+  background-color: #FFe5aa;
+  background-image: url(/media/img/admin/icon_alert.gif);
+}
+ul.messagelist li.info {
+  background-color: #FFC;
+}
+ul.messagelist li.success {
+  background-color: #AAFFAA;
+  background-image: url(/media/img/admin/icon_success.gif);
+}
